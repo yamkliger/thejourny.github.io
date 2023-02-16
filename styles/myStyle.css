@@ -1,0 +1,287 @@
+﻿body {
+    /*background-color: #A9E4ED;*/
+    /*background-color: white;*/
+    background-color: white ;
+    font-family: 'Assistant', sans-serif;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.about {
+    font-family: 'Assistant';
+    color: black;
+    font-weight: bold;
+    text-align:center;
+    padding-top: 15px;
+}
+.howToPlay {
+    font-family: 'Assistant';
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: #e2f1f5;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+#aboutDiv {
+    background-image: url("../images/odotblock.png");
+    background-size:530px 280px;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 525px;
+}
+#howToPlayDiv {
+    background-image: url("../images/howtoplayblock.png");
+    background-size: 530px 280px;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 525px;
+}
+
+.closeAbout {
+    margin-right: 483px;
+    margin-top: 18px;
+    color: transparent;
+    width: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+}
+.closeHowToPlay {
+    margin-right: 483px;
+    margin-top: 18px;
+    color: transparent;
+    width: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+}
+.hitlink {
+    display: block;
+    width: 170px;
+    margin-top: 200px;
+    margin-right: 178.3px;
+}
+/*#zahallogo {
+    display: inline-block;
+    height: 55px;
+    width: 65px;
+    margin-top: 5px;
+}*/
+/*#aboutDiv #hitlogo {
+    margin-left: 370px;
+    margin-top: 35px;
+    height: 105px;
+    width: 120px;
+    padding-bottom: 47px;
+}*/
+.odot {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 500px;
+}
+/*#barkod{
+    display:block;
+    width: 40%;
+    padding-right: 300px;
+}*/
+/*כותרת משחק*/
+header > a > p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+    color: black;
+    display: inline-block;
+    direction: rtl;
+}
+#gameArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+iframe{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+/*לוגו*/
+div#logo img {
+    width: 175px;
+    height: 35px;
+    padding: 5px 15px;
+    direction: rtl;
+}
+
+nav {
+    margin-top: -70px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+        }
+
+            nav ul li a {
+                display: block;
+                color: rgb(30, 104, 177);
+                text-align: center;
+                padding: 3px 10px;
+                font-weight: 400;
+                font-size: 12pt;
+                font-family: 'Assistant', sans-serif;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-family: 'Assistant', sans-serif;
+                    direction: rtl;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+
+.popUp {
+    background-color: transparent;
+/*    width: 400px;
+*/    position: fixed;
+    top: 60px;
+    z-index: 4;
+    text-align: center;
+    /*width: 700px;*/
+    border-radius: 25px;
+    /*padding: 10px;*/
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+  
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
